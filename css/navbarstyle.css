@@ -1,0 +1,226 @@
+nav {
+    height: 55px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color:black !important;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top:0;  
+    left: 0;
+
+}
+
+.toSpacelogobtn{
+    border: none;
+    margin-left: 3%;
+    width: 160px;
+    background-color: black;
+    cursor: pointer;
+}
+.toSpaceLogo{
+    width:100%;
+    cursor: pointer;
+}
+
+.navlink {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: right;
+}
+.navlink ul{
+    padding:10px;
+}
+.navlink ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navlink ul li a{
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+.menu a::after{
+    content: "";
+    position: absolute;
+    background-color:white;
+    height:2px;
+    width: 0;
+    left: 0;
+    display: block;
+    margin-top: 10px;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    transition:0.3s;
+}
+
+
+
+.menu a:hover:after {
+    width: 100%;
+}
+.more{
+    display: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(59, 55, 55);
+    min-width: 15px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin:35% 0px 0px 0px;
+    left:-20px;
+    -webkit-transition: -webkit-transform 700ms ease 0s;
+    transition: -webkit-transform 700ms ease 0s;
+    -o-transition: transform 700ms ease 0s;
+    transition: transform 700ms ease 0s;
+    transition: transform 700ms ease 0s, -webkit-transform 700ms ease 0s;
+  }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown-content a:hover {
+    background-color:rgb(77, 71, 71);
+  }
+.productHoverBoxContent p,.blogHoverBoxContent p,.newsHoverBoxContent p{
+    display:none;
+    position: absolute;
+    background-color: rgb(77, 71, 71);
+    padding:10px 4px 3px 5px;
+    border-radius: 5px 0px 0px 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.productHoverBox:hover + .productHoverBoxContent p,
+.blogHoverBox:hover + .blogHoverBoxContent p,
+.newsHoverBox:hover+ .newsHoverBoxContent p{
+    display: block;
+}
+.newsHoverBoxContent p{
+    left:-103px;
+    top:0px;
+}
+.blogHoverBoxContent p{
+    left: -103px;
+    top: 31px;
+}
+.productHoverBoxContent p{
+    left: -103px;
+    top: 62px;
+}
+
+
+@media screen and (max-width: 768px){
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        padding-right:50px;
+    }
+    .menu-toggle:before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .menu-toggle.active:before{
+        content: '\f00d';
+        font-family: fontAwesome;
+        padding-left: 5px;
+    }
+    .navlink{
+        display: none;
+    }
+    .navlink.active{
+        display: block;
+    }
+    .navlink.active ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        background:-o-linear-gradient(55deg, rgba(38,38,38,1) 0%, rgba(0,0,0,1) 50%, rgba(38,38,38,1) 100%);
+        background:linear-gradient(35deg, rgba(38,38,38,1) 0%, rgba(0,0,0,1) 50%, rgba(38,38,38,1) 100%);
+        top: 55px;
+        left: 0;
+        text-align: center;
+    }
+    .navlink.active ul li{
+        width: 100%;
+        padding: 10px;
+        border:1px solid white;
+    }
+    .menu a:after{
+        display: none;
+    }
+    .navlink.active ul li{
+        display: block;
+        margin: 0px;
+    }
+    .navlink.active ul li a{
+        font-size: 17px;
+        padding: 15px 10px 5px;
+    }
+    .dropdown-content {
+        display: none;
+        background-color:black;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        position: relative;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding-left:48%;
+    }
+    .dropdown-content a{
+        float: none;
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    .dropdown-content a:hover {
+        background-color:rgb(0,0,0);
+    }
+    .productHoverBox:hover + .productHoverBoxContent p,
+    .blogHoverBox:hover + .blogHoverBoxContent p,
+    .newsHoverBox:hover+ .newsHoverBoxContent p{
+        display:none;
+}
+    .dropdown-content a{
+        text-align:left;
+    }
+    .more{
+        display: inline-block;
+    }
+}
