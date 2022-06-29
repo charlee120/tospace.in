@@ -248,7 +248,7 @@ div,h1,h2,h3,h4,h5,h6,button,input,select,textarea,span,strong{
     -webkit-filter: grayscale(100%) invert(100%) !important;
             filter: grayscale(100%) invert(100%) !important;
 }
-.spazer-logo:hover{
+/* .spazer-logo:hover{
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%) !important;
     -webkit-transition: .2s ease;
@@ -261,7 +261,7 @@ div,h1,h2,h3,h4,h5,h6,button,input,select,textarea,span,strong{
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
-}
+} */
 
 
 .HomerocketImage{
