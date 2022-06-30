@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-size-1: calc(14px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-2: calc(12px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-3: calc(40px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-4: calc(30px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-5: calc(20px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-6: calc(15px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-7: calc(25px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+    --font-size-8: calc(20px + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+    height:5px;
+    background-color: white;
+    border-radius:10px;
+}
+body {
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+div,h1,h2,h3,h4,h5,h6,button,input,select,textarea,span,strong{
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu a.about::after{
+    width: 100%;
+}
+
+#Aboutus_container{
+    position: relative;
+    overflow: hidden;
+}
+#Aboutus_heading{
+    padding-top: 60px;
+    text-align: center;
+    font-size:var(--font-size-3);
+    font-weight : 500;
+}   
+#Adnaan_Imagepluscontent,#Satellite-antennaImagepluscontent,#Working-1_Imagepluscontent{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 5%;
+    padding-top: 3%;
+
+}
+#Satellite-antennaImagepluscontent,#Working-1_Imagepluscontent{
+    padding-bottom:2%;
+    padding-top: 0px;
+}
+#Adnaan_content,#Satellite-antenna_content{
+    margin-right: 50px;
+}
+
+#Working-1_content{
+    padding-left: 50px;
+}
+#Adnaan_content,#Satellite-antenna_content,#Working-1_content{
+    font-size:var(--font-size-1);
+}
+#Adnaan_Image,#Satellite-antenna_Image,#Working-1_Image{
+    width:47%;
+    height:auto;
+    padding: 50px;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+} 
+#Adnaan_Image,#Satellite-antenna_Image{ 
+    padding-left: 0px;
+} 
+#Working-1_Image{
+    padding-right: 0px;
+    
+}
+#Working-1_Imagepluscontent{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+
+#Roadmap_heading{
+    text-align: center;
+    font-size:var(--font-size-4);
+    margin-top:5%; 
+}
+
+#Timeline_Image,#Timeline_Image_vertical{
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+#Timeline_Image_vertical{
+    display: none;
+}
+
+.crewContent{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around;
+    max-width: 100%;
+    padding-bottom: 5em;
+}
+.OurCrew_heading{
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 5%;
+}
+
+.crewimages{
+    max-width: 57%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.crewcontents{
+    max-width: 40%;
+    font-size: 15px;
+    margin:10px;
+    padding:80px 20px ;
+    margin-bottom: 20px;
+}
+
+.crewimages img:nth-child(n){
+    height: auto;
+    width: 11vw;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.crewimages img:nth-child(n):hover{
+    border: 3px solid white;
+}
+
+.crewcontents div:nth-child(n){
+    display: none;
+    margin:10px;
+    line-height: 1.3em;
+    font-weight: 200;
+    text-align: center;
+    font-size: 18px;
+}
+.crewimage7{
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+.crewcontents p:nth-child(1){
+    font-weight: 500;
+    text-align: center;
+    font-size:30px;
+}
+
+.crewcontents p:nth-child(n){
+    margin:0px 20px;
+}
+
+.crewmobileview{
+    display: none;
+}
+.Featured_In_heading{
+    text-align: center;
+    font-size:var(--font-size-7);
+    padding: 2%;
+    margin-top:5%;
+}
+
+.Featured_headingpluslogos{
+    margin:25px 20px;
+    text-align:center;
+}
+
+.grid-featured{
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 30px;
+}
+
+.FeaturedIn_Logos{
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    margin:0px 60px;
+    padding:50px 0;
+}
+.featured-in-img{
+    width:auto;
+}
+#DNA-News_Logo,#BBC-Tamil_Logo{
+    margin-left:100%;
+}
+.featured-in-image img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.featured-in-image > img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    width:15vw;
+    height: 100%;
+    display: inline-block;
+}
+.DH > img{
+    width:10vw;
+ }
+.TOI > img{
+    width:16vw;
+}
+.BBC > img{
+    width:13vw;
+}
+
+.Featured_headingpluslogos img{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+.Featured_headingpluslogos img:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+
+
+
+
+#SatellitePlatform_Logo,#HeliumPlatfrom_Logo,#LaunchPlatform_Logo,#GroundStation_Logo{
+    height: 150px;
+    width: 150px;
+}
+
+
+.Platforms_heading{
+    text-align: center;
+    font-size:var(--font-size-7);
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+#Platforms_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    text-align: center;
+    margin-top:5%;
+    margin-bottom:10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#HeliumPlatformContent p,#LaunchPlatformContent p,#SatellitePlatformContent p, #GroundStationPlatformContent p{
+    padding:20px 10px;
+    font-size:var(--font-size-6);
+}
+
+#SatellitePlatformContent,#LaunchPlatformContent,#HeliumPlatformContent,#GroundStationPlatformContent{
+    background-color: #161616;
+    height:25%;
+    width:40%;
+    cursor: pointer;
+    margin:1%;
+    padding:25px;
+}
+
+
+.Platforms:hover > img{
+    -webkit-transition:.3s ease;
+    -o-transition:.3s ease;
+    transition:.3s ease;
+    z-index: 1;
+    -webkit-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+            transform: scale(1.25);
+}
+
+
+@media screen and (max-width:1000px){
+    .crewContent{
+        display:none;
+    }
+    .crewmobileview{
+        width:100%;
+        height:100%;
+        display: inline-block;
+    }
+    .ch-grid {
+        margin: 20px 0 0 0;
+        padding: 0 30px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ch-grid:after,
+    .ch-item:before {
+        content: '';
+        display: table;
+    }
+
+    .ch-grid:after {
+        clear: both;
+    }
+
+    .ch-grid li {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        margin-top:20px;
+        padding:10px;
+    }
+    .crewmobilecontainer {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        -webkit-box-shadow: 
+            inset 0 0 0 10px rgba(255,255,255,0.6),
+            0 1px 2px rgba(0,0,0,0.1);
+                box-shadow: 
+            inset 0 0 0 10px rgba(255,255,255,0.6),
+            0 1px 2px rgba(0,0,0,0.1);
+        -webkit-transition: all 0.4s  cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        -o-transition: all 0.4s  cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        transition: all 0.4s  cubic-bezier(0.33, 0.16, 0.43, 1.28);
+    }
+
+    .crew-img-1 { 
+        background: url("../Images/Profile pics web/Adnaan 1.png");
+    }
+    .crew-img-2 { 
+        background: url("../Images/Profile pics web/Pradeep.png");
+    }
+    .crew-img-3 { 
+        background: url("../Images/Profile pics web/Govind 2.png");
+    } 
+    .crew-img-4 { 
+        background: url("../Images/Profile pics web/Elangovan 1.png");
+    }
+    .crew-img-5 { 
+        background: url("../Images/Profile pics web/Arwind Adithyan.png");
+    }
+    .crew-img-6 { 
+        background: url("../Images/Profile pics web/Sriram.png");
+    } 
+    .crew-img-7 { 
+        background: url("../Images/Profile pics web/Gogeni Bargav.png");
+        -webkit-filter:grayscale(100%);
+        filter:grayscale(100%);
+    }
+    .crew-img-8 {
+        background: url("../Images/Profile pics web/Rakesh.png");
+    } 
+    .crew-img-9 { 
+        background: url("../Images/Profile pics web/Manick.png");
+    } 
+    .crew-img-10 { 
+        background: url("../Images/Profile pics web/Sanjay.png");
+    } 
+
+    .crewmobilecontainer:nth-child(n){
+        background-repeat:  no-repeat;
+        background-size:250px;
+    }
+
+    .crew-info {
+        position: absolute;
+        background: rgba(0,0,0,0.7);
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        -o-transition: all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        transition: all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .crew-info p:nth-child(1) {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .crew-info p {
+        color: #fff;
+        padding: 10px 5px;
+        margin: 0 20px;
+        font-size: 10px;
+        opacity: 0;
+        -webkit-transition:all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        -o-transition:all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        transition:all 0.4s cubic-bezier(0.33, 0.16, 0.43, 1.28);
+        line-height: 1.3em;
+        text-align: center;
+    }
+    .crewmobilecontainer:hover  .crew-info{
+        -webkit-box-shadow: 
+            inset 0 0 0 3px white;
+                box-shadow: 
+            inset 0 0 0 3px white;
+    }
+    .crewmobilecontainer:hover {
+        -webkit-box-shadow: 
+            inset 0 0 0 1px rgba(255,255,255,0.1),
+            0 1px 2px rgba(0,0,0,0.1);
+                box-shadow: 
+            inset 0 0 0 1px rgba(255,255,255,0.1),
+            0 1px 2px rgba(0,0,0,0.1);
+    }
+
+
+    .crewmobilecontainer:hover .crew-info {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+
+
+    .crewmobilecontainer:hover .crew-info p {
+        opacity: 1;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #Adnaan_content,#Satellite-antenna_content,#Working-1_content{
+        font-size:var(--font-size-1);
+    }
+    #Adnaan_Imagepluscontent,#Satellite-antennaImagepluscontent,#Working-1_Imagepluscontent{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        padding-left:12%;
+        padding-right:12%;
+    }
+    #Adnaan_Image,#Satellite-antenna_Image,#Working-1_Image{
+        width:100%;
+        padding-bottom: 20px;
+        padding-right: 0;
+        padding-top:20px;
+        margin:0 auto;
+    }
+    #Adnaan_content,#Satellite-antenna_content{
+        margin-right: 0;
+    }
+    #Working-1_content{
+        padding-left:0px;
+    }
+    #Working-1_Image{
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:0;
+    }
+    #Adnaan_Imagepluscontent,#Working-1_Imagepluscontent{
+        padding-bottom:3%;
+    }
+    #Timeline_Image{
+        display: none;
+    }
+    #Timeline_Image_vertical{
+       display:block;
+    }
+
+
+
+    #HeliumPlatformContent p,#LaunchPlatformContent p,#SatellitePlatformContent p, #GroundStationPlatformContent p{
+        font-size:var(--font-size-2);
+    }
+    #SatellitePlatform_Logo,#HeliumPlatfrom_Logo,#LaunchPlatform_Logo,#GroundStation_Logo{
+        height: 130px;
+        width: 130px;
+    }
+
+    .featured-in-image > img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    width:14vw;
+    height: 100%;
+    display: inline-block;
+    }
+    .DH > img{
+        width:9vw;
+     }
+    .TOI > img{
+        width:15vw;
+    }
+    .BBC > img{
+        width:12vw;
+    }
+    .FeaturedIn_Logos {
+        margin: 0px 50px
+    }
+    .ch-grid li {
+        width: 250px;
+        height: 250px;
+    }
+    li:nth-child(odd){
+        padding-right:10px;
+    }
+    li:nth-child(even){
+        padding-left:10px;
+    }
+    .crewmobilecontainer:nth-child(n){
+        background-size:250px;        
+    }
+    .ch-grid {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:670px){
+
+    #Platforms_container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+       
+    }
+    #SatellitePlatform_Logo,#HeliumPlatfrom_Logo,#LaunchPlatform_Logo,#GroundStation_Logo{
+        height: 140px;
+        width: 140px;
+    }
+    #HeliumPlatformContent p,#LaunchPlatformContent p,#SatellitePlatformContent p, #GroundStationPlatformContent p{
+        font-size:var(--font-size-8);
+    }
+    #SatellitePlatformContent,#LaunchPlatformContent,#HeliumPlatformContent,#GroundStationPlatformContent{
+        margin-top:5%;
+        height:25%;
+        width:80%; 
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    #Adnaan_content,#Satellite-antenna_content,#Working-1_content{
+        font-size:var(--font-size-2);
+    }   
+    #Adnaan_Imagepluscontent,#Satellite-antennaImagepluscontent,#Working-1_Imagepluscontent{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        padding-left:10%;
+        padding-right:10%;
+    }
+    #Roadmap_heading{
+        font-size:var(--font-size-5);
+    }
+
+    #SatellitePlatform_Logo,#HeliumPlatfrom_Logo,#LaunchPlatform_Logo,#GroundStation_Logo{
+        height: 120px;
+        width: 120px;
+    }
+
+    .ch-grid li {
+        width: 300px;
+        height: 300px;
+        padding: 0px;
+    }
+    .crewmobilecontainer:nth-child(n){
+        background-size:300px;        
+    }
+    .ch-grid {
+        padding: 10px;
+    }
+    .crew-img-4 p:nth-child(1){
+        font-size:20px;
+    }
+    .crew-info p{
+        margin: 0 25px;
+        font-size: 12px;
+    }
+    #HeliumPlatformContent p,#LaunchPlatformContent p,#SatellitePlatformContent p, #GroundStationPlatformContent p{
+        font-size:var(--font-size-8);
+    }
+    #GroundStation_Logo {
+        height: 150px;
+        width: 150px;
+    }
+    .featured-in-image > img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    width:13vw;
+    height: 100%;
+    display: inline-block;
+    }
+    .DH > img{
+        width:8vw;
+     }
+    .TOI > img{
+        width:14vw;
+    }
+    .BBC > img{
+        width:11vw;
+    }
+    .FeaturedIn_Logos {
+        margin: 0px 30px;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:310px){
+    .ch-grid li {
+        width: 250px;
+        height: 250px;
+        padding: 0px;
+    }
+    .crewmobilecontainer:nth-child(n){
+        background-size:250px;
+    }
+}

@@ -1,0 +1,181 @@
+.downbox{
+    height: 100%;
+    width: 100%;
+    background-color:#1a1a1a;
+    padding:40px 40px 15px 40px;
+  }
+.toSpaceLogo_footer{
+    width: 150px;
+    cursor: pointer;
+}
+.toSpaceLogo_footer_line{
+    background-color:white;
+    height:2px;
+    max-width: 300px;
+    margin-top: 5px;
+    border-radius:10px;
+}
+.address_footer{
+    margin-top: 2%;
+}
+.address_footer a{
+    text-decoration: none;
+    color: white;
+}
+.address_footer-3,.address_footer-2{
+    margin-top: 4%;
+}
+.number_footer{
+    font-size: 14px;
+}
+.number_footer-1{
+    margin-top: 4%;
+}
+.number_footer-2{
+    margin-top: 4%;
+    text-align: center;
+}
+.footer_contents{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.copyrightText{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    margin-top: 20px;
+    font-size:10px;
+    color:rgb(148, 144, 144);
+}
+.social_media_footer{
+    cursor: pointer;
+}
+.fab{
+    margin-top: 15px;
+    color: white;
+    margin-right:10px;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;
+}
+.fab.fa-facebook-f:hover,.fab.fa-facebook-f::after{
+    color: #3b5998;
+}
+.social_media_footer .instagram{
+    padding-top: 10px;
+}
+.social_media_footer .instagram:hover{
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+   -webkit-transition:all .2s linear;
+   -o-transition:all .2s linear;
+   transition:all .2s linear;
+}
+.fab.fa-twitter:hover,.fab.fa-twitter::after{
+    color:#00acee;
+}
+.fab.fa-linkedin-in:hover,.fab.fa-linkedin-in::after{
+    color:#0e76a8;
+}
+.fab.fa-youtube:hover,.fab.fa-youtube::after{
+    color:#FF0000;
+}
+
+
+#moveToTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.fa-rocket-launch{
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    font-size: 25px;
+}
+
+@media screen and (max-width:1000px){
+    .footer_contents{
+        font-size: 14px;
+    }
+    .number_footer{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:768px){
+    .footer_contents{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .number_footer-2{
+        text-align: left;
+        margin-top: 5px;
+    }
+    .fab{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .social_media_footer,.number_footer-1{
+        margin-top: 15px;
+    }
+    .address_footer-2,.address_footer-3{
+        margin-top:5px;
+    }
+    .address_footer{
+        margin-top: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width:500px){
+    .footer_contents{
+        font-size: 13px;
+    }
+    .number_footer{
+        font-size: 12px;
+    }
+    .copyrightText{
+        font-size:8px;
+    }
+    .address_footer {
+        margin-top: 20px;
+    }
+    .downbox {
+        padding: 25px 25px 15px 30px;
+    }
+
+}
