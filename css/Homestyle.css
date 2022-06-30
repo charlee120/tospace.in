@@ -423,6 +423,14 @@ div,h1,h2,h3,h4,h5,h6,button,input,select,textarea,span,strong{
         height: 7vw;
         display: inline-block;
     }
+    .Ind-Startup > img {
+        width: 200px;
+    }
+    
+    .TN-Startup > img {
+        margin-top: 0.1em;
+        height: 10px;
+    }
     .grid-support, .grid-register{
         grid-column-gap:15px;
     }
